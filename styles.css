@@ -1,6 +1,7 @@
 #navbar{justify-content: space-between;
     display: flex;
     text-align: center;
+    justify-content: space-between;
 }
 #menu-button{
     height: 40px; 
@@ -34,3 +35,7 @@
 .navbar-button{height: 40px; width:40px;}
 
 .middle-container{display: flex;}
+
+
+.first-group{display: flex;}
+.third-group{display: flex;}
