@@ -1,0 +1,14 @@
+#navbar{display: flex;}
+
+#menu-button{height: 40px; width: 40px;}
+#youtube-icon{width: 100px;height: 40px;}
+#search-bar{font-family: 'Roboto','Noto',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 4px;
+    max-width: 100%;}
+
+#search-button{height: 40px;}
+#search-bar-container{width: 400px;}
+.navbar-button{height: 40px; width:40px;}
