@@ -1,7 +1,25 @@
-#navbar{display: flex;}
-
-#menu-button{height: 40px; width: 40px;}
-#youtube-icon{width: 100px;height: 40px;}
+#navbar{
+    display: flex;
+    text-align: center;
+}
+#menu-button{
+    height: 40px; 
+    width: 40px;    
+}
+#youtube-icon{
+    width: 100px;
+    height: 40px;
+    font-size:100%;
+    background-color: transparent;
+     float:left;
+     position:relative;
+     width:200px;
+     border-width: 0px; 
+     border-style: none; 
+     margin: 3px 0px 0px; 
+     padding: 0px; 
+     border-color: white; 
+}
 #search-bar{font-family: 'Roboto','Noto',sans-serif;
     font-size: 16px;
     font-weight: 400;
