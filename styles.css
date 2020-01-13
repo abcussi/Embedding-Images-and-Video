@@ -1,4 +1,4 @@
-#navbar{
+#navbar{justify-content: space-between;
     display: flex;
     text-align: center;
 }
@@ -6,19 +6,21 @@
     height: 40px; 
     width: 40px;    
 }
-#youtube-icon{
+#youtube-icon{  
+    justify-content: left;  
     width: 100px;
     height: 40px;
     font-size:100%;
     background-color: transparent;
-     float:left;
-     position:relative;
+    float:left;
+    position:relative;
      width:200px;
      border-width: 0px; 
      border-style: none; 
      margin: 3px 0px 0px; 
-     padding: 0px; 
-     border-color: white; 
+     padding-right: 200px; 
+     border-color: white;
+
 }
 #search-bar{font-family: 'Roboto','Noto',sans-serif;
     font-size: 16px;
