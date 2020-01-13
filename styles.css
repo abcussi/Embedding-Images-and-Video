@@ -1,13 +1,14 @@
-#navbar{justify-content: space-between;
+#navbar{
     display: flex;
     text-align: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 #menu-button{
     height: 40px; 
     width: 40px;    
 }
 #youtube-icon{  
+
     width: 90px;
     height: 40px;
     font-size:100%;
