@@ -12,3 +12,5 @@
 #search-button{height: 40px;}
 #search-bar-container{width: 400px;}
 .navbar-button{height: 40px; width:40px;}
+
+.middle-container{display: flex;}
