@@ -307,3 +307,19 @@
     padding: 0px;
     border-color: rgb(211, 211, 211);
 }
+.video-frame{
+    border: none;
+}
+.img-preview{
+    height:94px;
+    width:168px;
+    font-size:100%;
+    background-color: transparent; 
+    position:relative;
+    top:0px;
+    border-width: 0px; 
+    border-style: none; 
+    margin: 0px; 
+    padding: 0px; 
+    border-color: white; 
+}
