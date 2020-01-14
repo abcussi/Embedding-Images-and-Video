@@ -323,3 +323,19 @@
     padding: 0px; 
     border-color: white; 
 }
+
+.ul-footer{
+    font-size:100%;background-color: transparent; white-space:nowrap;vertical-align:middle;display:inline;list-style: none outside none; 
+                border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white;
+}
+
+.li-footer{
+    font-size:100%;
+    background-color: transparent; 
+    display:inline-block;
+    border-width: 0px; 
+    border-style: none; 
+    margin: 0px 14px 0px 0px; 
+    padding: 0px; 
+    border-color: white; 
+}
