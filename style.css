@@ -1,0 +1,195 @@
+.container{
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.body-container{
+    display: flex;
+    padding-top: 15px;
+}
+
+.first-group{
+    display: flex;
+    align-items: center;
+}
+
+.second-group {
+    display: flex;
+}
+
+.third-group {
+    display: flex;
+}
+
+.left-section {
+    padding: 50px;
+} 
+
+.search-bar {
+    font-family: 'Roboto','Noto',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 4px;
+    width: 500px;
+}
+
+.menu-button, #youtube-icon {
+    width: 90px;
+    height: 40px;
+}
+
+#youtube-icon {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+#search-button{
+    height: 40px;
+    direction:ltr;
+    font:normal normal normal 12px/normal 'YouTube Noto', Roboto, arial, sans-serif;
+    font-family:'YouTube Noto', Roboto, arial, sans-serif;
+    display:inline-block;
+    font-weight:500;
+    font-size:11px;
+    text-decoration:none;
+    white-space:nowrap;
+    word-wrap:normal;
+    line-height:normal;
+    vertical-align:middle;
+    cursor:pointer;
+    border-top-right-radius:2px 2px;
+    border-bottom-right-radius:2px 2px;
+    box-shadow:rgba(0, 0, 0, 0.046875) 0px 1px 0px;
+    background-color: rgb(248, 248, 248);
+    color:rgb(51, 51, 51);
+    float: right;
+    border-top-left-radius:0px 0px;
+    border-bottom-left-radius:0px 0px;
+    outline: invert none 0px;
+    border-width: 1px 1px 1px 0px;
+    border-style: solid solid solid none;
+    margin: 0px; padding: 0px;
+    border-color: rgb(211, 211, 211) rgb(211, 211, 211) rgb(211, 211, 211) white;
+    }
+#search-bar-container{width: 400px;}
+.navbar-button{height: 40px; width:40px; margin-left: 10px;}
+
+#video-section{
+    width: 900px;
+    
+}
+
+.video-footer{
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons-video-footer-section {
+    display: flex;
+}
+
+.thumbs-count {
+    display: flex;
+    align-items: center;
+}
+
+.thumb-icon, .share-icon, .save-button, .more-button{
+    height: 30px;
+    margin: 5px;
+}
+
+.thumb-icon {
+    height: 30px;
+}
+
+.footer{
+    margin-top: 10px;
+}
+
+.second-footer-list {
+    margin-top: 10px;
+}
+
+.third-footer-list {
+    margin-top: 10px;
+}
+#menu1{
+    pointer-events: none; 
+    display: block; 
+    width: 100%; 
+    height: 100%;
+}
+#icon1{
+    font-size:100%;
+    width:100px;
+    height:30px;
+    background-color: transparent; 
+    background-size:100px 30px;
+    background-repeat: no-repeat; 
+    border-width: 0px; 
+    border-style: none; 
+    margin: 0px; 
+    padding: 0px; 
+    border-color: white; 
+}
+#span-search-button{
+    font-size:100%;
+    display:block;
+    opacity:0.6;
+    text-indent:-10000px;
+    background-image:url('https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');
+    background-color: transparent; 
+    width:15px;
+    height:15px;
+    box-shadow:none;
+    background-position: -28px -66px; 
+    background-repeat: no-repeat; 
+    border-width: medium; 
+    border-style: none; 
+    margin: 0px 25px; 
+    padding: 0px; 
+    border-color: white;
+}
+.style-scope yt-icon1{
+    pointer-events: none; 
+    display: block; 
+    width: 100%; 
+    height: 100%;
+
+}
+#button{
+    font:normal normal normal 12px/normal 'YouTube Noto', Roboto, arial, sans-serif;
+    font-family:'YouTube Noto', Roboto, arial, sans-serif;
+    display:inline-block;
+    height:28px;
+    font-weight:500;
+    font-size:11px;
+    text-decoration:none;
+    white-space:nowrap;
+    word-wrap:normal;
+    line-height:normal;
+    vertical-align:middle;
+    cursor:pointer;
+    border-top-left-radius:2px 2px;
+    border-top-right-radius:2px 2px;
+    border-bottom-right-radius:2px 2px;
+    border-bottom-left-radius:2px 2px;
+    box-shadow:rgba(0, 0, 0, 0.046875) 0px 1px 0px;
+    background-color: rgb(22, 122, 198); 
+    color:rgb(255, 255, 255);
+    outline: invert none 0px; 
+    border-width: 1px; 
+    border-style: solid; 
+    margin: 0px; 
+    padding: 0px 10px; 
+    border-color: rgb(22, 122, 198); 
+}

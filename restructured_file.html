@@ -1,131 +1,6 @@
 <html>
     <head>
-        <style>
-            .container{
-            }
-
-            .navbar{
-                display: flex;
-                justify-content: space-between;
-                padding-bottom: 15px;
-            }
-
-            .body-container{
-                display: flex;
-                padding-top: 15px;
-            }
-
-            .first-group{
-                display: flex;
-                align-items: center;
-            }
-
-            .second-group {
-                display: flex;
-            }
-
-            .third-group {
-                display: flex;
-            }
-    
-            .left-section {
-                padding: 50px;
-            } 
-
-            .search-bar {
-                font-family: 'Roboto','Noto',sans-serif;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 24px;
-                margin-left: 4px;
-                width: 500px;
-            }
-
-            .menu-button, #youtube-icon {
-                width: 90px;
-                height: 40px;
-            }
-
-            #youtube-icon {
-                width: 100px;
-                height: 40px;
-                display: flex;
-                align-items: center;
-            }
-
-            #search-button{
-                height: 40px;
-                direction:ltr;
-                font:normal normal normal 12px/normal 'YouTube Noto', Roboto, arial, sans-serif;
-                font-family:'YouTube Noto', Roboto, arial, sans-serif;
-                display:inline-block;
-                font-weight:500;
-                font-size:11px;
-                text-decoration:none;
-                white-space:nowrap;
-                word-wrap:normal;
-                line-height:normal;
-                vertical-align:middle;
-                cursor:pointer;
-                border-top-right-radius:2px 2px;
-                border-bottom-right-radius:2px 2px;
-                box-shadow:rgba(0, 0, 0, 0.046875) 0px 1px 0px;
-                background-color: rgb(248, 248, 248);
-                color:rgb(51, 51, 51);
-                float: right;
-                border-top-left-radius:0px 0px;
-                border-bottom-left-radius:0px 0px;
-                outline: invert none 0px;
-                border-width: 1px 1px 1px 0px;
-                border-style: solid solid solid none;
-                margin: 0px; padding: 0px;
-                border-color: rgb(211, 211, 211) rgb(211, 211, 211) rgb(211, 211, 211) white;
-                }
-            #search-bar-container{width: 400px;}
-            .navbar-button{height: 40px; width:40px; margin-left: 10px;}
-
-            #video-section{
-                width: 900px;
-                
-            }
-
-            .video-footer{
-                height: 56px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-
-            .buttons-video-footer-section {
-                display: flex;
-            }
-
-            .thumbs-count {
-                display: flex;
-                align-items: center;
-            }
-
-            .thumb-icon, .share-icon, .save-button, .more-button{
-                height: 30px;
-                margin: 5px;
-            }
-
-            .thumb-icon {
-                height: 30px;
-            }
-
-            .footer{
-                margin-top: 10px;
-            }
-
-            .second-footer-list {
-                margin-top: 10px;
-            }
-
-            .third-footer-list {
-                margin-top: 10px;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <div class="container">
@@ -133,14 +8,14 @@
                 <div class="navbar">
                     <div class="first-group">
                         <div class="menu-button">
-                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
+                            <svg id="menu1" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" ><g class="style-scope yt-icon">
                             <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" class="style-scope yt-icon"></path>
                             </g>
                             </svg>
                         </div>
 
                         <div id="youtube-icon">
-                            <svg viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope ytd-topbar-logo-renderer" style=""><g viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" class="style-scope ytd-topbar-logo-renderer">
+                            <svg id="icon1" viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope ytd-topbar-logo-renderer" ><g viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" class="style-scope ytd-topbar-logo-renderer">
                                 <g class="style-scope ytd-topbar-logo-renderer">
                                     <path fill="#FF0000" d="M63,14.87c-0.72-2.7-2.85-4.83-5.56-5.56C52.54,8,32.88,8,32.88,8S13.23,8,8.32,9.31
                                     c-2.7,0.72-4.83,2.85-5.56,5.56C1.45,19.77,1.45,30,1.45,30s0,10.23,1.31,15.13c0.72,2.7,2.85,4.83,5.56,5.56
@@ -186,31 +61,31 @@
                     </div>
                     <div class="second-group">
                         <input class="search-bar" >
-                        <button id="search-button" style=" ">
+                        <button id="search-button" >
                             <span style="opacity:0.5;"></span>
-                            <span style="font-size:100%;display:block;opacity:0.6;text-indent:-10000px;background-image:url('https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');background-color: transparent; width:15px;height:15px;box-shadow:none;background-position: -28px -66px; background-repeat: no-repeat; border-width: medium; border-style: none; margin: 0px 25px; padding: 0px; border-color: white; "><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
+                            <span id="span-search-button"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" ><g class="style-scope yt-icon1">
                             <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" class="style-scope yt-icon"></path>
                         </g></svg></span></button>
                     </div>
 
                     <div class="third-group">
                         <div class="navbar-button">
-                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
+                            <svg  viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" ><g class="style-scope yt-icon1">
                             <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z" class="style-scope yt-icon"></path>
                             </g></svg>
                         </div>
                         <div class="navbar-button">
-                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
+                            <svg  viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" ><g class="style-scope yt-icon1">
                                 <path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z" class="style-scope yt-icon"></path>
                             </g></svg>
                         </div>
                         <div class="navbar-button">
-                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
+                            <svg  viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" ><g class="style-scope yt-icon1">
                                 <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" class="style-scope yt-icon"></path>
                             </g></svg>
                         </div>
                         <div>
-                            <button type="button" style="font:normal normal normal 12px/normal 'YouTube Noto', Roboto, arial, sans-serif;font-family:'YouTube Noto', Roboto, arial, sans-serif;display:inline-block;height:28px;font-weight:500;font-size:11px;text-decoration:none;white-space:nowrap;word-wrap:normal;line-height:normal;vertical-align:middle;cursor:pointer;border-top-left-radius:2px 2px;border-top-right-radius:2px 2px;border-bottom-right-radius:2px 2px;border-bottom-left-radius:2px 2px;box-shadow:rgba(0, 0, 0, 0.046875) 0px 1px 0px;background-color: rgb(22, 122, 198); color:rgb(255, 255, 255);outline: invert none 0px; border-width: 1px; border-style: solid; margin: 0px; padding: 0px 10px; border-color: rgb(22, 122, 198); "><span style="font-size:100%;background-color: transparent; border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; ">Sign in</span></button>
+                            <button id="button" type="button" style=""><span style="font-size:100%;background-color: transparent; border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; ">Sign in</span></button>
                         </div>
                     </div>
             </div>
