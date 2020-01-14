@@ -86,10 +86,28 @@
 
             #video-section{
                 width: 900px;
+                
             }
 
             .video-footer{
+                height: 56px;
                 display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .buttons-video-footer-section {
+                display: flex;
+            }
+
+            .thumbs-count {
+                display: flex;
+                align-items: center;
+            }
+
+            .thumb-icon, .share-icon, .save-button, .more-button{
+                height: 30px;
+                margin: 5px;
             }
 
             .thumb-icon {
@@ -200,52 +218,62 @@
 
         <div class="body-container">
             <main>
-                <div class="left-section">
+                <!-- <div class="left-section"> -->
                     <section id="video-section">
                         <iframe width="860" height="515" src="https://www.youtube.com/embed/ZnuwB35GYMY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     
-                        <div>
+                        <!-- <div> -->
                             <h2>Contributing to Open Source Part I: The Easy Way</h2>
 
                             <div class="video-footer">
-                                <div>
+  
+                                <div class="visits-section">
+                                    <div>
                                     53,056 vistas•27 feb. 2014
+                                    </div>
                                 </div>
 
-                                <div class="thumb-icon">
-                                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; height: 100%;"><g class="style-scope yt-icon">
-                                        <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" class="style-scope yt-icon"></path>
-                                    </g></svg>
-                                </div>
+                                <div class="buttons-video-footer-section">
 
-                                <div class="thumb-icon">
-                                    3000
-                                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; height: 100%;"><g class="style-scope yt-icon">
-                                        <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z" class="style-scope yt-icon"></path>
-                                    </g></svg>
-                                </div>
+                                    <div class="thumbs-count">
+                                        <div class="thumb-icon">
+                                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; height: 100%;"><g class="style-scope yt-icon">
+                                                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" class="style-scope yt-icon"></path>
+                                            </g></svg>
+                                        </div>
 
-                                <div class="share-icon">
-                                    Share
-                                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
-            
-                                        <path d="M11.7333 8.26667V4L19.2 11.4667L11.7333 18.9333V14.56C6.4 14.56 2.66667 16.2667 0 20C1.06667 14.6667 4.26667 9.33333 11.7333 8.26667Z" class="style-scope yt-icon"></path>
-                                    </g></svg>
-                                </div>
+                                        295
+                                    </div>
 
-                                <div class="save-button">
-                                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
-                                        <path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z" class="style-scope yt-icon"></path>
-                                    </g></svg>
-                                </div>
-
-                                <div class="more-button">
-                                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
-                                        <circle cx="5" cy="12" r="2" class="style-scope yt-icon"></circle><circle cx="12" cy="12" r="2" class="style-scope yt-icon"></circle><circle cx="19" cy="12" r="2" class="style-scope yt-icon"></circle>
-                                    </g></svg>
+                                    <div class="thumb-icon">
+                                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; height: 100%;"><g class="style-scope yt-icon">
+                                            <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z" class="style-scope yt-icon"></path>
+                                        </g></svg>
+                                    </div>
+        
+                                    <div class="share-icon">
+                                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; height: 100%;"><g class="style-scope yt-icon">
+                
+                                            <path d="M11.7333 8.26667V4L19.2 11.4667L11.7333 18.9333V14.56C6.4 14.56 2.66667 16.2667 0 20C1.06667 14.6667 4.26667 9.33333 11.7333 8.26667Z" class="style-scope yt-icon"></path>
+                                        </g></svg>
+                                    </div>
+        
+                                    <div class="save-button">
+                                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; height: 100%;"><g class="style-scope yt-icon">
+                                            <path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z" class="style-scope yt-icon"></path>
+                                        </g></svg>
+                                    </div>
+        
+                                    <div class="more-button">
+                                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; height: 100%;"><g class="style-scope yt-icon">
+                                            <circle cx="5" cy="12" r="2" class="style-scope yt-icon"></circle><circle cx="12" cy="12" r="2" class="style-scope yt-icon"></circle><circle cx="19" cy="12" r="2" class="style-scope yt-icon"></circle>
+                                        </g></svg>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        <!-- </div> -->
+                              
+                        <!-- </div> -->
                     </section>
 
                     <section id="description-section">
@@ -264,8 +292,8 @@
                         </div>
                         </div>
                     </section>
-                </div>
-            </main>
+            
+			</main>
 
             <aside>
                 <section id="sidebar-section">
