@@ -97,9 +97,11 @@
     display: flex;
 }
 
-.thumbs-count {
+.thumbs-count, .share-container, .more-container, .save-container {
     display: flex;
     align-items: center;
+    padding: 3px;
+    margin: 3px;
 }
 
 .thumb-icon, .share-icon, .save-button, .more-button{
