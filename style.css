@@ -14,9 +14,18 @@
 }
 
 .body-container{
+    /* background-color: red; */
     display: flex;
     padding-top: 15px;
+    justify-content: center;
 }
+
+@media screen and (max-width: 1000px) {
+    .body-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
 .first-group{
     display: flex;
@@ -33,10 +42,12 @@
 
 .left-section {
     padding: 50px;
+    max-width: 1000px;
 } 
 
 #sidebar-section{
     padding-right: 50px;
+    max-width: 500px;
 }
 
 .search-bar {
