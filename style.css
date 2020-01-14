@@ -35,6 +35,10 @@
     padding: 50px;
 } 
 
+#sidebar-section{
+    padding-right: 50px;
+}
+
 .search-bar {
     font-family: 'Roboto','Noto',sans-serif;
     font-size: 16px;
