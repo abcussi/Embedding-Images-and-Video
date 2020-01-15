@@ -23,7 +23,7 @@ body {margin-top: 0;}
     justify-content: center;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1332px) {
     .body-container {
       display: flex;
       flex-direction: column;
@@ -45,7 +45,8 @@ body {margin-top: 0;}
 
 .left-section {
     padding: 50px;
-    max-width: 1000px;
+    max-width: 950px;
+    /* background-color: blue; */
 } 
 
 #sidebar-section{
@@ -120,6 +121,20 @@ body {margin-top: 0;}
     justify-content: space-between;
 }
 
+.subscribe-btn {}
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
 .buttons-video-footer-section {
     display: flex;
 }
@@ -171,9 +186,8 @@ body {margin-top: 0;}
 }
 
 .follow-button {
-    font-size:100%;
-    box-sizing: border-box; 
-    -moz-box-sizing: border-box; -ms-box-sizing: border-box; display:inline;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; 
+    background-color: #f44336;
+    border-radius: 5px;
 }
 
 .profile-name {
@@ -232,6 +246,7 @@ h3, h4 {
     height: 100%;
 
 }
+
 #button{
     font:normal normal normal 12px/normal 'YouTube Noto', Roboto, arial, sans-serif;
     font-family:'YouTube Noto', Roboto, arial, sans-serif;
