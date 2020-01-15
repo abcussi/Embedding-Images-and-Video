@@ -1,57 +1,28 @@
-# Project Name
+# Embedding Images and Video
 
-> One paragraph statement about the project.
+> This project consists of building an HTML document that matches the appearance of youtube.
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+Use of vectors of the icon on youtube with css and all of the page it's responsive.
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- HTML, CSS.
 
 ## Authors
 
-👤 **Author1**
+👤 **Abdel Pérez**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@githubhandle](https://github.com/abdelp/)
+- Twitter: [@twitterhandle](https://twitter.com/abdelperez11)
+- Linkedin: [linkedin](https://www.linkedin.com/in/abdel-p%C3%A9rez-t%C3%A9llez-72b2aa153/)
 
-👤 **Author2**
+👤 **Angel Benjamin Cussi**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@githubhandle](https://github.com/abcussi)
+- Twitter: [@twitterhandle](https://twitter.com/thecussi)
+- Linkedin: [linkedin](https://www.linkedin.com/in/angel-cussi-1b2310174/)
 
 ## 🤝 Contributing
 
