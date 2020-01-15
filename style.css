@@ -435,6 +435,9 @@ border-color: white;
     border-color: white;
 }
 
+.button-footer2 {
+    font:normal normal normal 12px/normal 'YouTube Noto', Roboto, arial, sans-serif;font-family:'YouTube Noto', Roboto, arial, sans-serif;height:28px;font-weight:500;font-size:11px;text-decoration:none;white-space:nowrap;word-wrap:normal;line-height:normal;vertical-align:middle;cursor:pointer;border-top-left-radius:2px 2px;border-top-right-radius:2px 2px;border-bottom-right-radius:2px 2px;border-bottom-left-radius:2px 2px;box-shadow:rgba(0, 0, 0, 0.046875) 0px 1px 0px;background-color: rgb(248, 248, 248); color:rgb(51, 51, 51);display:inline-block;outline: invert none 0px; border-width: 1px; border-style: solid; margin: 0px; padding: 0px 10px; border-color: rgb(211, 211, 211);
+}
 .span-footer3 {
     font-size:100%;
     display:inline-block;
@@ -454,14 +457,7 @@ border-color: white;
 }
 
 .span-footer4 {
-    font-size:100%;
-    background-color: transparent;
-     vertical-align:middle;
-     border-width: 0px; 
-     border-style: none; 
-     margin: 0px; 
-     padding: 0px; 
-     border-color: white;
+    font-size:100%;background-color: transparent; vertical-align:middle;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; 
 }
 
 .span-footer5 {
@@ -586,6 +582,25 @@ border-color: white;
     padding: 0px 10px; 
     border-color: rgb(211, 211, 211);
 }
+
+.span-footer10 {
+    font-size:100%;
+    display:inline-block;
+    vertical-align:middle;
+    opacity:0.5;
+    background-image:url('https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');
+    background-color: transparent; 
+    width:15px;
+    height:16px;
+    background-position: -147px -230px; 
+    background-repeat: no-repeat; 
+    border-width: 0px; 
+    border-style: none; 
+    margin: 0px; 
+    padding: 0px; 
+    border-color: white;
+}
+
 @media screen and (max-width: 1332px) {
     .body-container {
       display: flex;
