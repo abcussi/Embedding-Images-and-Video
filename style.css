@@ -699,7 +699,6 @@ border-color: white;
     justify-content: space-between;
 }
 
-.subscribe-btn {}
 
 .button {
     border: none;
@@ -716,12 +715,17 @@ border-color: white;
 .buttons-video-footer-section {
     display: flex;
 }
-
+.share-container{
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+}
 .thumbs-count, .share-container, .more-container, .save-container {
     display: flex;
     align-items: center;
     padding: 3px;
     margin: 3px;
+    cursor: pointer;
 }
 
 .thumb-icon, .share-icon, .save-button, .more-button{
