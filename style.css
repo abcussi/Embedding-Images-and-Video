@@ -4,7 +4,9 @@
     font-family: 'Roboto';
 }
 
-body {margin-top: 0;}
+body {
+    margin-top: 0;
+}
 
 .container{
 }
@@ -12,8 +14,10 @@ body {margin-top: 0;}
 .navbar{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
     align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .body-container{
@@ -622,8 +626,9 @@ border-color: white;
 }
 
 .left-section {
-    padding: 50px;
+    width: 100%;
     max-width: 950px;
+    
     /* background-color: blue; */
 } 
 
