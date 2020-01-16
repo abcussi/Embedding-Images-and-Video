@@ -1,8 +1,724 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-
+        <title>VIDEO PLAYER</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <h1>HELLO WORLD</h1>
+        <div class="container">
+            <header>
+            <nav>
+                <div class="navbar">
+                    <div class="first-group">
+                        <div class="menu-button">
+                            <svg id="menu1" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" ><g class="style-scope yt-icon">
+                            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" class="style-scope yt-icon"></path>
+                            </g>
+                            </svg>
+                        </div>
+                        <div id="youtube-icon">
+                            <svg id="icon1" viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope ytd-topbar-logo-renderer" >
+                                <g class="style-scope ytd-topbar-logo-renderer">
+                                    <path fill="#FF0000" d="M63,14.87c-0.72-2.7-2.85-4.83-5.56-5.56C52.54,8,32.88,8,32.88,8S13.23,8,8.32,9.31
+                                    c-2.7,0.72-4.83,2.85-5.56,5.56C1.45,19.77,1.45,30,1.45,30s0,10.23,1.31,15.13c0.72,2.7,2.85,4.83,5.56,5.56
+                                    C13.23,52,32.88,52,32.88,52s19.66,0,24.56-1.31c2.7-0.72,4.83-2.85,5.56-5.56C64.31,40.23,64.31,30,64.31,30
+                                    S64.31,19.77,63,14.87z" class="style-scope ytd-topbar-logo-renderer"></path>
+                                    <polygon fill="#FFFFFF" points="26.6,39.43 42.93,30 26.6,20.57" class="style-scope ytd-topbar-logo-renderer"></polygon>
+                                </g>
+                                <g class="style-scope ytd-topbar-logo-renderer">
+                                    <g id="youtube-paths" class="style-scope ytd-topbar-logo-renderer">
+                                    <path fill="#282828" d="M92.69,48.03c-1.24-0.84-2.13-2.14-2.65-3.91c-0.52-1.77-0.79-4.12-0.79-7.06v-4
+                                        c0-2.97,0.3-5.35,0.9-7.15c0.6-1.8,1.54-3.11,2.81-3.93c1.27-0.82,2.94-1.24,5.01-1.24c2.04,0,3.67,0.42,4.9,1.26
+                                        c1.23,0.84,2.13,2.15,2.7,3.93c0.57,1.78,0.85,4.16,0.85,7.12v4c0,2.94-0.28,5.3-0.83,7.08c-0.55,1.78-1.45,3.09-2.7,3.91
+                                        c-1.24,0.82-2.93,1.24-5.06,1.24C95.65,49.29,93.93,48.87,92.69,48.03z M99.66,43.71c0.34-0.9,0.52-2.37,0.52-4.4v-8.59
+                                        c0-1.98-0.17-3.42-0.52-4.34c-0.34-0.91-0.95-1.37-1.82-1.37c-0.84,0-1.43,0.46-1.78,1.37c-0.34,0.91-0.52,2.36-0.52,4.34v8.59
+                                        c0,2.04,0.16,3.51,0.49,4.4c0.33,0.9,0.93,1.35,1.8,1.35C98.71,45.06,99.31,44.61,99.66,43.71z" class="style-scope ytd-topbar-logo-renderer"></path>
+                                    <path fill="#282828" d="M188.16,37.13v1.39c0,1.77,0.05,3.09,0.16,3.98c0.1,0.88,0.32,1.53,0.65,1.93
+                                        c0.33,0.4,0.84,0.61,1.53,0.61c0.93,0,1.57-0.36,1.91-1.08c0.34-0.72,0.53-1.92,0.56-3.6l5.35,0.31
+                                        c0.03,0.24,0.04,0.57,0.04,0.99c0,2.55-0.7,4.45-2.09,5.71c-1.39,1.26-3.36,1.89-5.91,1.89c-3.06,0-5.2-0.96-6.43-2.88
+                                        c-1.23-1.92-1.84-4.88-1.84-8.9v-4.81c0-4.14,0.64-7.15,1.91-9.06c1.27-1.9,3.45-2.85,6.54-2.85c2.13,0,3.76,0.39,4.9,1.17
+                                        c1.14,0.78,1.94,1.99,2.41,3.64c0.46,1.65,0.7,3.93,0.7,6.83v4.72H188.16z M188.95,25.53c-0.31,0.39-0.52,1.03-0.63,1.91
+                                        c-0.11,0.88-0.16,2.23-0.16,4.02v1.98h4.54v-1.98c0-1.77-0.06-3.11-0.18-4.02c-0.12-0.91-0.34-1.56-0.65-1.93
+                                        c-0.31-0.37-0.8-0.56-1.46-0.56C189.75,24.94,189.26,25.14,188.95,25.53z" class="style-scope ytd-topbar-logo-renderer"></path>
+                                    <path fill="#282828" d="M77.59,36.61l-7.06-25.49h6.16l2.47,11.55c0.63,2.85,1.09,5.27,1.39,7.28h0.18
+                                        c0.21-1.44,0.67-3.85,1.39-7.24l2.56-11.6h6.16L83.7,36.61v12.23h-6.11V36.61z" class="style-scope ytd-topbar-logo-renderer"></path>
+                                    <path fill="#282828" d="M126.45,21.28v27.55h-4.85l-0.54-3.37h-0.13c-1.32,2.55-3.3,3.82-5.93,3.82c-1.83,0-3.18-0.6-4.05-1.8
+                                        c-0.87-1.2-1.3-3.07-1.3-5.62V21.28h6.2v20.23c0,1.23,0.13,2.11,0.4,2.63c0.27,0.52,0.72,0.79,1.35,0.79
+                                        c0.54,0,1.06-0.16,1.55-0.49c0.49-0.33,0.86-0.75,1.1-1.26V21.28H126.45z" class="style-scope ytd-topbar-logo-renderer"></path>
+                                    <path fill="#282828" d="M158.27,21.28v27.55h-4.85l-0.54-3.37h-0.13c-1.32,2.55-3.3,3.82-5.93,3.82c-1.83,0-3.18-0.6-4.05-1.8
+                                        c-0.87-1.2-1.3-3.07-1.3-5.62V21.28h6.2v20.23c0,1.23,0.13,2.11,0.4,2.63c0.27,0.52,0.72,0.79,1.35,0.79
+                                        c0.54,0,1.06-0.16,1.55-0.49c0.49-0.33,0.86-0.75,1.1-1.26V21.28H158.27z" class="style-scope ytd-topbar-logo-renderer"></path>
+                                    <path fill="#282828" d="M143.31,16.11h-6.16v32.72h-6.07V16.11h-6.16v-4.99h18.38V16.11z" class="style-scope ytd-topbar-logo-renderer"></path>
+                                    <path fill="#282828" d="M178.8,25.69c-0.38-1.74-0.98-3-1.82-3.78c-0.84-0.78-1.99-1.17-3.46-1.17c-1.14,0-2.2,0.32-3.19,0.97
+                                        c-0.99,0.64-1.75,1.49-2.29,2.54h-0.05l0-14.52h-5.98v39.11h5.12l0.63-2.61h0.13c0.48,0.93,1.2,1.66,2.16,2.2
+                                        c0.96,0.54,2.02,0.81,3.19,0.81c2.1,0,3.64-0.97,4.63-2.9c0.99-1.93,1.48-4.95,1.48-9.06v-4.36
+                                        C179.36,29.84,179.17,27.43,178.8,25.69z M173.11,36.93c0,2.01-0.08,3.58-0.25,4.72c-0.16,1.14-0.44,1.95-0.83,2.43
+                                        c-0.39,0.48-0.91,0.72-1.57,0.72c-0.51,0-0.98-0.12-1.42-0.36c-0.43-0.24-0.79-0.6-1.06-1.08V27.71
+                                        c0.21-0.75,0.57-1.36,1.08-1.84c0.51-0.48,1.06-0.72,1.66-0.72c0.63,0,1.12,0.25,1.46,0.74c0.34,0.49,0.58,1.33,0.72,2.49
+                                        c0.13,1.17,0.2,2.83,0.2,4.99V36.93z" class="style-scope ytd-topbar-logo-renderer"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="second-group">
+                        <input class="search-bar" >
+                        <button id="search-button" >
+                            <span class="opacity"></span>
+                            <span id="span-search-button"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" ><g class="style-scope yt-icon1">
+                            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" class="style-scope yt-icon"></path>
+                        </g></svg></span></button>
+                    </div>
+
+                    <div class="third-group">
+                        <div class="navbar-button">
+                            <svg  viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" ><g class="style-scope yt-icon1">
+                            <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z" class="style-scope yt-icon"></path>
+                            </g></svg>
+                        </div>
+                        <div class="navbar-button">
+                            <svg  viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" ><g class="style-scope yt-icon1">
+                                <path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z" class="style-scope yt-icon"></path>
+                            </g></svg>
+                        </div>
+                        <div class="navbar-button">
+                            <svg  viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" ><g class="style-scope yt-icon1">
+                                <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" class="style-scope yt-icon"></path>
+                            </g></svg>
+                        </div>
+                        <div class="signin-btn-container">
+                            <button id="button" type="button" ><span class="sidebar-border-style">Sign in</span></button>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+    </header>
+        <div class="body-container">
+            <main>
+                <div class="left-section">
+                    <section id="video-section">
+                        <iframe class="video-frame" width="950" height="550" 
+                        src="https://www.youtube.com/embed/ZnuwB35GYMY"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+
+                    
+                            <h2>Contributing to Open Source Part I: The Easy Way</h2>
+
+                            <div class="video-footer">
+  
+                                <div class="visits-section">
+                                    <div>
+                                    53,056 vistas•27 feb. 2014
+                                    </div>
+                                </div>
+
+                                <div class="buttons-video-footer-section">
+
+                                    <div class="thumbs-count">
+                                        <div class="thumb-icon">
+                                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="viewbox" ><g class="style-scope yt-icon">
+                                                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" class="style-scope yt-icon"></path>
+                                            </g></svg>
+                                        </div>
+
+                                        295
+                                    </div>
+
+                                    <div class="thumbs-count">
+                                        <div class="thumb-icon">
+                                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="viewbox" ><g class="style-scope yt-icon">
+                                                <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z" class="style-scope yt-icon"></path>
+                                            </g></svg>
+                                        </div>
+                                        7
+                                    </div>
+
+                                    <button class="share-container">
+
+                                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="viewbox" ><g class="style-scope yt-icon">
+                    
+                                                <path d="M11.7333 8.26667V4L19.2 11.4667L11.7333 18.9333V14.56C6.4 14.56 2.66667 16.2667 0 20C1.06667 14.6667 4.26667 9.33333 11.7333 8.26667Z" class="style-scope yt-icon"></path>
+                                            </g></svg>
+
+                                        Share
+                                    </button>
+
+                                    <div class="save-container">
+                                        <div class="save-button">
+                                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="viewbox" ><g class="style-scope yt-icon">
+                                                <path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z" class="style-scope yt-icon"></path>
+                                            </g></svg>
+                                        </div>
+                                        Save
+                                    </div>
+                                
+                                    <div class="more-container">
+                                        <div class="more-button">
+                                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="viewbox" ><g class="style-scope yt-icon">
+                                                <circle cx="5" cy="12" r="2" class="style-scope yt-icon"></circle><circle cx="12" cy="12" r="2" class="style-scope yt-icon"></circle><circle cx="19" cy="12" r="2" class="style-scope yt-icon"></circle>
+                                            </g></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </section>
+
+                    <section id="description-section">
+
+                        <div class="profile-section">
+
+                            <div class="first-profile-section">
+                                <img src="https://yt3.ggpht.com/a/AGF-l7_mhE28uQAUvkl0P0gQ1-7umWeWprf3QkZoMw=s88-c-k-c0xffffffff-no-rj-mo" alt="user profile picture" class="profile-thumbnail">
+                                
+                                <div class="profile-name">
+                                    <h3>The Odin Project</h3>
+                                    <h4>26,300 subscribers</h4>
+                                </div>
+                            </div>
+
+                            <div class="follow-btn">
+                                <button class="follow-button button">Subscribe</button>
+                            </div>
+                        </div>
+                        <div id="vid-desc">How do you contribute to open source?  In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github.  I'll also describe what kinds of contributions open source software projects are typically looking for.  As an example, I use submitting a student solution to a web development exercise from The Odin Project, a free online curriculum for learning web development with Ruby on Rails.  You can find more information about that project at http://theodinproject.com.</div>
+            
+                   </section>
+
+                    <section id="comments-section">
+                        <div class="div-comment1" >
+                        <div class="div-comment2" >
+                        <div class="div-comment3" >
+                        <span class="loading-title" title="Loading icon" ></span>
+                        <span class="loading-span" >
+                            Loading... </span>
+                        </div>
+                        </div>
+                        </div>
+                    </section>
+                </div>
+			</main>
+
+            <aside>
+                <section id="sidebar-section">
+                    <div class="sidebar-border-style">
+                        <div class="sidebar-border-style2">
+                        <div class="sidebar-border-style">
+                        <div class="sidebar-border-style3">
+                        <label class="sidebar-border-style">Autoplay</label>
+                        <span class="sidebar-span-style">
+                        <span class="sidebar-span-style2"></span>
+                        <span class="sidebar-span-style3">When autoplay is enabled, a suggested video will automatically play next.</span>
+                        </span>
+                        <span class="sidebar-span-style4">
+                        <input id="autoplay-checkbox" type="checkbox" checked="checked" value="on" class="autoplay-checkbox"><label class="label-autoplay"><span class="span-autoplay"><span class="span-autoplay2"></span></span><span class="span-autoplay3"></span><span class="span-autoplay4"></span></label>
+                        </span>
+                        </div>
+                        <h4 class="up-next-title">
+                        Up next </h4>
+                        <div class="sidebar-border-style">
+                        <ul class="ul-up-next">
+                        <li class="li-up-next">
+                        <div class="div-video-desc">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=mENDYhfxH-o" title="Contributing to Open Source Part II: The Real Way" class="a-preview">
+                        <span class="span-preview-desc">
+                        Contributing to Open Source Part II: The Real Way </span>
+                        <span class="span-duration-preview">
+                        - Duration: 14:25. </span>
+                        <span class="span-details-preview"><span class="sidebar-border-style">The Odin Project</span></span>
+                        <span class="span-details-preview">29,985 views</span>
+                        </a>
+                        </div>
+                        <div class="div-video-prev">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=mENDYhfxH-o" class="a-video-preview">
+                            <span class="span-video-preview1">
+                                <img src="https://archive.ph/Bss88/6350ed47768d4be4388f5a8a2b530730b3520802" class="img-preview" alt="auto"  >
+                            <span class="span-video-preview2">14:25</span>
+                            </span></a>
+                        <span class="span-video-preview3">
+                           </span>
+                        
+                        <button type="button" title="Queue" class="button-video-preview"><span class="button-span-preview"></span></button>
+                        </div>
+                        </li>
+                        </ul>
+                        </div>
+                        </div>
+                        </div>
+
+                        <div class="side-border-style4">
+                            <hr class="divisor-preview">
+                            <div class="sidebar-border-style">
+                        
+                                <ul class="ul-preview-list">
+                                    <li class="li-preview-list">
+                                        <div class="div-video-desc">
+                                            <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=YJZCUhxNCv8" title="'How to Get a Job at the Big 4 - Amazon, Facebook, Google &amp; Microsoft' by Sean Lee" class="a-preview">
+                                                <span class="span-preview-desc">
+                                    'How to Get a Job at the Big 4 - Amazon, Facebook, Google &amp; Microsoft' by Sean Lee </span>
+                                                <span class="span-duration-preview">
+                                    - Duration: 42:35. </span>
+                                                <span class="span-details-preview"><span class="sidebar-border-style">imtiana</span></span>
+                                                <span class="span-details-preview">981,543 views</span>
+                                            </a>
+                                        </div>
+
+                                        <div class="div-video-prev">
+                                            <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=YJZCUhxNCv8" class="a-video-preview"><span class="span-video-preview1"><img src="https://archive.ph/Bss88/495e6661840ba5e59315b8d9fbd12e8f79916207" alt="auto" class="img-preview"><span class="span-video-preview2">42:35</span></span></a> 
+                                        </div>
+                                    </li>
+                        
+                        <li class="li-preview-list">
+                        <div class="div-video-desc">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=cwDqjmSmtMQ" title="Programming in Visual Basic .Net How to Connect Access Database to VB.Net" class="a-preview">
+                        <span class="span-preview-desc">
+                        Programming in Visual Basic .Net How to Connect Access Database to VB.Net </span>
+                        <span class="span-duration-preview">
+                        - Duration: 19:11. </span>
+                        <span class="span-details-preview"><span class="sidebar-border-style">iBasskung</span></span>
+                        <span class="span-details-preview">16,130,993 views</span>
+                        </a>
+                        </div>
+                        <div class="div-video-prev">
+                            <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=cwDqjmSmtMQ" class="a-video-preview"><span class="span-video-preview1"><img src="https://archive.ph/Bss88/94ce5195858269ff0184aa735ee160f562dafac4" class="img-preview" alt="auto"><span class="span-video-preview2">19:11</span></span></a>
+                            <span class="span-video-preview3">
+                              </span>
+                        
+                            <button type="button" title="Queue" class="button-video-preview"><span class="button-span-preview"></span></button>
+                        
+                        </div>
+                        </li><li class="li-preview-list">
+                        <div class="div-video-desc">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=7YcW25PHnAA" title="REST API concepts and examples" class="a-preview">
+                        <span class="span-preview-desc">
+                        REST API concepts and examples </span>
+                        <span class="span-duration-preview">
+                        - Duration: 8:53. </span>
+                        <span class="span-details-preview"><span class="sidebar-border-style">WebConcepts</span></span>
+                        <span class="span-details-preview">3,580,484 views</span>
+                        </a>
+                        </div>
+                        <div class="div-video-prev">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=7YcW25PHnAA" class="a-video-preview"><span class="span-video-preview1"><img src="https://archive.ph/Bss88/42fcf704757c206b21126f9ef6c413eff28de822" class="img-preview" alt="auto"><span class="span-video-preview2">8:53</span></span></a>
+                        
+                        
+                        
+                        <span class="span-video-preview3">
+                            </span>
+                        
+                        <button type="button" title="Queue" class="button-video-preview"><span class="button-span-preview"></span></button>
+                        </div>
+                        </li><li class="li-preview-list">
+                        <div class="div-video-desc">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=UEb1cvZG3GU" title="GitHub - Why Microsoft Paid $7.5B for the Future of Software! - A Case Study for Entrepreneurs" class="a-preview">
+                        <span class="span-preview-desc">
+                        GitHub - Why Microsoft Paid $7.5B for the Future of Software! - A Case Study for Entrepreneurs </span>
+                        <span class="span-duration-preview">
+                        - Duration: 17:41. </span>
+                        <span class="span-details-preview"><span class="sidebar-border-style">Valuetainment</span></span>
+                        <span class="span-details-preview">444,634 views</span>
+                        </a>
+                        </div>
+                        <div class="div-video-prev">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=UEb1cvZG3GU" class="a-video-preview"><span class="span-video-preview1"><img src="https://archive.ph/Bss88/ed9683aa07170cb5421ba283d3aad8e0a3626b97" class="img-preview" alt="auto"><span class="span-video-preview2">17:41</span></span></a>
+                        
+                        
+                        
+                        <span class="span-video-preview3">
+                        </span>
+                        
+                        <button type="button" title="Queue" class="button-video-preview"><span class="button-span-preview"></span></button>
+                        </div>
+                        </li><li class="li-preview-list">
+                        <div class="div-video-desc">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=Bb0HnaYNUx4" title="How to create a 3D Terrain with Google Maps and height maps in Photoshop - 3D Map Generator Terrain" class="a-preview">
+                        <span class="span-preview-desc">
+                        How to create a 3D Terrain with Google Maps and height maps in Photoshop - 3D Map Generator Terrain </span>
+                        <span class="span-duration-preview">
+                        - Duration: 20:32. </span>
+                        <span class="span-details-preview"><span class="sidebar-border-style">Orange Box Ceo</span></span>
+                        <span class="span-details-preview">6,269,391 views</span>
+                        </a>
+                        </div>
+                        <div class="div-video-prev">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=Bb0HnaYNUx4" class="a-video-preview"><span class="span-video-preview1"><img src="https://archive.ph/Bss88/e551ad6b2fda543caa6fbd78c98ec95c1f1d0aff" class="img-preview" alt="auto"><span class="span-video-preview2">20:32</span></span></a>
+                        
+                        
+                        
+                        <span class="span-video-preview3">
+                        </span>
+                        
+                        <button type="button" title="Queue" class="button-video-preview"><span class="button-span-preview"></span></button>
+                        </div>
+                        </li><li class="li-preview-list">
+                        <div class="div-video-desc">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=YRhxdVk_sIs" title="Convolutional Neural Networks (CNNs) explained" class="a-preview">
+                        <span class="span-preview-desc">
+                        Convolutional Neural Networks (CNNs) explained </span>
+                        <span class="span-duration-preview">
+                        - Duration: 8:37. </span>
+                        <span class="span-details-preview"><span class="sidebar-border-style">deeplizard</span></span>
+                        <span class="span-details-preview">239,752 views</span>
+                        </a>
+                        </div>
+                        <div class="div-video-prev">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=YRhxdVk_sIs" class="a-video-preview"><span class="span-video-preview1"><img src="https://archive.ph/Bss88/df21e12d7260fba2247c4dd328453a98929270e9" class="img-preview" alt="auto"><span class="span-video-preview2">8:37</span></span></a>
+                        
+                        
+                        
+                        <span class="span-video-preview3">
+                        </span>
+                        
+                        <button type="button" title="Queue" class="button-video-preview"><span class="button-span-preview"></span></button>
+                        </div>
+                        </li><li class="li-preview-list">
+                        <div class="div-video-desc">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=l0QGLMwR-lY" title="Top 10 Linux Job Interview Questions" class="a-preview">
+                        <span class="span-preview-desc">
+                        Top 10 Linux Job Interview Questions </span>
+                        <span class="span-duration-preview">
+                        - Duration: 16:04. </span>
+                        <span class="span-details-preview"><span class="sidebar-border-style">tutoriaLinux</span></span>
+                        <span class="span-details-preview">1,236,003 views</span>
+                        </a>
+                        </div>
+                        <div class="div-video-prev">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=l0QGLMwR-lY" class="a-video-preview"><span class="span-video-preview1"><img src="https://archive.ph/Bss88/0425d088770dd5fbb04c5830b5d45ceb7f87eb22" class="img-preview" alt="auto"><span class="span-video-preview2">16:04</span></span></a>
+                        
+                        
+                        
+                        <span class="span-video-preview3">
+                        </span>
+                        
+                        <button type="button" title="Queue" class="button-video-preview"><span class="button-span-preview"></span></button>
+                        </div>
+                        </li><li class="li-preview-list">
+                        <div class="div-video-desc">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=ciNHn38EyRc" title="Running an SQL Injection Attack - Computerphile" class="a-preview">
+                        <span class="span-preview-desc">
+                        Running an SQL Injection Attack - Computerphile </span>
+                        <span class="span-duration-preview">
+                        - Duration: 17:11. </span>
+                        <span class="span-details-preview"><span class="sidebar-border-style">Computerphile</span></span>
+                        <span class="span-details-preview">2,217,477 views</span>
+                        </a>
+                        </div>
+                        <div class="div-video-prev">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=ciNHn38EyRc" class="a-video-preview"><span class="span-video-preview1"><img src="https://archive.ph/Bss88/87ad6fdeaef86aa051f826e3006c068b60e06de9" class="img-preview" alt="auto"><span class="span-video-preview2">17:11</span></span></a>
+                        
+                        
+                        
+                        <span class="span-video-preview3">
+                        </span>
+                        
+                        <button type="button" title="Queue" class="button-video-preview"><span class="button-span-preview"></span></button>
+                        </div>
+                        </li><li class="li-preview-list">
+                        <div class="div-video-desc">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=OZ_ieeuwrCA" title="How to prepare for product based companies??" class="a-preview">
+                        <span class="span-preview-desc">
+                        How to prepare for product based companies?? </span>
+                        <span class="span-duration-preview">
+                        - Duration: 26:01. </span>
+                        <span class="span-details-preview"><span class="sidebar-border-style">Gate Lectures by Ravindrababu Ravula</span></span>
+                        <span class="span-details-preview">291,215 views</span>
+                        </a>
+                        </div>
+                        <div class="div-video-prev">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=OZ_ieeuwrCA" class="a-video-preview"><span class="span-video-preview1"><img src="https://archive.ph/Bss88/b6e60231c77705ba5365c14da7c4ecb4ccb6cf86" class="img-preview" alt="auto"><span class="span-video-preview2">26:01</span></span></a>
+                        
+                        
+                        
+                        <span class="span-video-preview3">
+                        </span>
+                        
+                        <button type="button" title="Queue" class="button-video-preview"><span class="button-span-preview"></span></button>
+                        </div>
+                        </li><li class="li-preview-list">
+                        <div class="div-video-desc">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=UoT2oava9ns" title="Visual Basic .Net : Search in Access Database - DataGridView BindingSource Filter Part 1/2" class="a-preview">
+                        <span class="span-preview-desc">
+                        Visual Basic .Net : Search in Access Database - DataGridView BindingSource Filter Part 1/2 </span>
+                        <span class="span-duration-preview">
+                        - Duration: 25:01. </span>
+                        <span class="span-details-preview"><span class="sidebar-border-style">iBasskung</span></span>
+                        <span class="span-details-preview">6,047,577 views</span>
+                        </a>
+                        </div>
+                        <div class="div-video-prev">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=UoT2oava9ns" class="a-video-preview"><span class="span-video-preview1"><img src="https://archive.ph/Bss88/30341e348ffdfd8ef110d868a3f4892d1dff1719" class="img-preview" alt="auto"><span class="span-video-preview2">25:01</span></span></a>
+                        
+                        
+                        
+                        <span class="span-video-preview3">
+                        </span>
+                        
+                        <button type="button" title="Queue" class="button-video-preview"><span class="button-span-preview"></span></button>
+                        </div>
+                        </li><li class="li-preview-list">
+                        <div class="div-video-desc">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=yoW2jHoVdug" title="How To Convert pdf to word without software" class="a-preview">
+                        <span class="span-preview-desc">
+                        How To Convert pdf to word without software </span>
+                        <span class="span-duration-preview">
+                        - Duration: 9:04. </span>
+                        <span class="span-details-preview"><span class="sidebar-border-style">karim hamdadi</span></span>
+                        <span class="span-details-preview">12,275,519 views</span>
+                        </a>
+                        </div>
+                        <div class="div-video-prev">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=yoW2jHoVdug" class="a-video-preview"><span class="span-video-preview1"><img src="https://archive.ph/Bss88/9104e3bbe284cc6497daa29c2c6128b6d4ab68cc" class="img-preview" alt="auto"><span class="span-video-preview2">9:04</span></span></a>
+                        
+                        
+                        
+                        <span class="span-video-preview3">
+                        </span>
+                        
+                        <button type="button" title="Queue" class="button-video-preview"><span class="button-span-preview"></span></button>
+                        </div>
+                        </li><li class="li-preview-list">
+                        <div class="div-video-desc">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=p-89r5QvQvQ" title="What Python Projects Should I Build to Get a Job?" class="a-preview">
+                        <span class="span-preview-desc">
+                        What Python Projects Should I Build to Get a Job? </span>
+                        <span class="span-duration-preview">
+                        - Duration: 12:19. </span>
+                        <span class="span-details-preview"><span class="sidebar-border-style">Real Python</span></span>
+                        <span class="span-details-preview">169,155 views</span>
+                        </a>
+                        </div>
+                        <div class="div-video-prev">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=p-89r5QvQvQ" class="a-video-preview"><span class="span-video-preview1"><img src="https://archive.ph/Bss88/f19150ffbc1e56e3c0f4bf3d16f852c1a06c00d9" class="img-preview" alt="auto"><span class="span-video-preview2">12:19</span></span></a>
+                        
+                        
+                        
+                        <span class="span-video-preview3">
+                        </span>
+                        
+                        <button type="button" title="Queue" class="button-video-preview"><span class="button-span-preview"></span></button>
+                        </div>
+                        </li><li class="li-preview-list">
+                        <div class="div-video-desc">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=9aYzvzvjkYQ" title="How To NOT Look Like A Tourist | What To Wear In Europe" class="a-preview">
+                        <span class="span-preview-desc">
+                        How To NOT Look Like A Tourist | What To Wear In Europe </span>
+                        <span class="span-duration-preview">
+                        - Duration: 8:19. </span>
+                        <span class="span-details-preview"><span class="sidebar-border-style">Audrey Coyne</span></span>
+                        <span class="span-details-preview">3,432,133 views</span>
+                        </a>
+                        </div>
+                        <div class="div-video-prev">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=9aYzvzvjkYQ" class="a-video-preview"><span class="span-video-preview1"><img src="https://archive.ph/Bss88/5db65ef125469d0b5b9b1a07b61c9cee64cbdfac" class="img-preview" alt="auto"><span class="span-video-preview2">8:19</span></span></a>
+                        
+                        
+                        
+                        <span class="span-video-preview3">
+                        </span>
+                        
+                        <button type="button" title="Queue" class="button-video-preview"><span class="button-span-preview"></span></button>
+                        </div>
+                        </li><li class="li-preview-list">
+                        <div class="div-video-desc">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=dSl_qnWO104" title="Your First GitHub Pull Request (in 10 Mins)" class="a-preview">
+                        <span class="span-preview-desc">
+                        Your First GitHub Pull Request (in 10 Mins) </span>
+                        <span class="span-duration-preview">
+                        - Duration: 9:47. </span>
+                        <span class="span-details-preview"><span class="sidebar-border-style">Jackson Bates</span></span>
+                        <span class="span-details-preview">31,930 views</span>
+                        </a>
+                        </div>
+                        <div class="div-video-prev">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=dSl_qnWO104" class="a-video-preview"><span class="span-video-preview1"><img src="https://archive.ph/Bss88/3e74c5bf2dadd9fe3ec6089804970180b60cbfcd" class="img-preview" alt="auto"><span class="span-video-preview2">9:47</span></span></a>
+                        
+                        
+        
+                        <span class="span-video-preview3">
+                        </span>
+                        
+                        <button type="button" title="Queue" class="button-video-preview"><span class="button-span-preview"></span></button>
+                        </div>
+                        </li><li class="li-preview-list">
+                        <div class="div-video-desc">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=-W_VsLXmjJU" title="Top signs of an inexperienced programmer" class="a-preview">
+                        <span class="span-preview-desc">
+                        Top signs of an inexperienced programmer </span>
+                        <span class="span-duration-preview">
+                        - Duration: 11:35. </span>
+                        <span class="span-details-preview"><span class="sidebar-border-style">TechLead</span></span>
+                        <span class="span-details-preview">928,523 views</span>
+                        </a>
+                        </div>
+                        <div class="div-video-prev">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=-W_VsLXmjJU" class="a-video-preview"><span class="span-video-preview1"><img src="https://archive.ph/Bss88/6b60f3abb556233757873da7cedd5b091744ce34" class="img-preview" alt="auto"><span class="span-video-preview2">11:35</span></span></a>
+                        
+                        
+                        
+                        <span class="span-video-preview3">
+                        </span>
+                        
+                        <button type="button" title="Queue" class="button-video-preview"><span class="button-span-preview"></span></button>
+                        </div>
+                        </li><li class="li-preview-list">
+                        <div class="div-video-desc">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=EcojyBV4QJ4" title="Why I left my job at Google (as a software engineer)" class="a-preview">
+                        <span class="span-preview-desc">
+                        Why I left my job at Google (as a software engineer) </span>
+                        <span class="span-duration-preview">
+                        - Duration: 11:06. </span>
+                        <span class="span-details-preview"><span class="sidebar-border-style">TechLead</span></span>
+                        <span class="span-details-preview">1,684,582 views</span>
+                        </a>
+                        </div>
+                        <div class="div-video-prev">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=EcojyBV4QJ4" class="a-video-preview"><span class="span-video-preview1"><img src="https://archive.ph/Bss88/872b157fed3ecb14099122fcb5f981408ec8d7d2" class="img-preview" alt="auto"><span class="span-video-preview2">11:06</span></span></a>
+                        
+                        
+                        
+                        <span class="span-video-preview3">
+                        </span>
+                        
+                        <button type="button" title="Queue" class="button-video-preview">
+                            <span class="button-span-preview"></span></button>
+                        </div>
+                        </li><li class="li-preview-list">
+                        <div class="div-video-desc">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=hwdeUG_gySI" title="Max Stoiber - I want you to contribute to open source" class="a-preview">
+                        <span class="span-preview-desc">
+                        Max Stoiber - I want you to contribute to open source </span>
+                        <span class="span-duration-preview">
+                        - Duration: 19:32. </span>
+                        <span class="span-details-preview"><span class="sidebar-border-style">ReactRally</span></span>
+                        <span class="span-details-preview">3,134 views</span>
+                        </a>
+                        </div>
+                        <div class="div-video-prev">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=hwdeUG_gySI" class="a-video-preview"><span class="span-video-preview1"><img src="https://archive.ph/Bss88/d95c11ceed49c1ae50d224d33110ab2728c03a23" class="img-preview" alt="auto"><span class="span-video-preview2">19:32</span></span></a>
+                        
+                        
+                        
+                        <span class="span-video-preview3">
+                        </span>
+                        
+                        <button type="button" title="Queue" class="button-video-preview"><span class="button-span-preview"></span></button>
+                        </div>
+                        </li><li class="li-preview-list">
+                        <div class="div-video-desc">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=EtJy69cEOtQ" title="How to Learn Anything... Fast - Josh Kaufman" class="a-preview">
+                        <span class="span-preview-desc">
+                        How to Learn Anything... Fast - Josh Kaufman </span>
+                        <span class="span-duration-preview">
+                        - Duration: 23:20. </span>
+                        <span class="span-details-preview"><span class="sidebar-border-style">The RSA</span></span>
+                        <span class="span-details-preview">3,157,647 views</span>
+                        </a>
+                        </div>
+                        <div class="div-video-prev">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=EtJy69cEOtQ" class="a-video-preview"><span class="span-video-preview1"><img src="https://archive.ph/Bss88/c477e426b7e9e5361e6c2bd1838c751516a76765" class="img-preview" alt="auto"><span class="span-video-preview2">23:20</span></span></a>
+                        
+                        
+                        
+                        <span class="span-video-preview3">
+                        </span>
+                        
+                        <button type="button" title="Queue" class="button-video-preview"><span class="button-span-preview"></span></button>
+                        </div>
+                        </li><li class="li-preview-list">
+                        <div class="div-video-desc">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=FQsBmnZvBdc" title="Git &amp; GitHub: Pull requests (10/11)" class="a-preview">
+                        <span class="span-preview-desc">
+                        Git &amp; GitHub: Pull requests (10/11) </span>
+                        <span class="span-duration-preview">
+                        - Duration: 5:59. </span>
+                        <span class="span-details-preview"><span class="sidebar-border-style">Codecourse</span></span>
+                        <span class="span-details-preview">78,624 views</span>
+                        </a>
+                        </div>
+                        <div class="div-video-prev">
+                        <a href="https://archive.ph/o/Bss88/https://www.youtube.com/watch?v=FQsBmnZvBdc" class="a-video-preview"><span class="span-video-preview1"><img src="https://archive.ph/Bss88/71a8551dc420f7a68c7e3fa3f91e5af9b702eae8" class="img-preview" alt="auto"><span class="span-video-preview2">5:59</span></span></a>
+                        <span class="span-video-preview3">
+                        </span>
+                        
+                        <button type="button" title="Queue" class="button-video-preview"><span class="button-span-preview"></span></button>
+                        </div>
+                       </li>
+                                    <li class="loading-ms-title">
+                                    Loading more suggestions... </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </aside>
+        </div>
+
+        <footer class="footer">
+            <div>
+                <div class="div-footer1">
+                    <a href="https://archive.ph/o/Bss88/https://www.youtube.com/" title="YouTube home" class="a-footer1">
+                    <span class="span-footer7"></span></a></div>
+                    <ul class="ul-footer1">
+                    <li class="li-footer1">
+                    <button type="button" class="button-footer1">
+                        <span class="span-footer1"></span>
+                        <span class="span-footer2">
+                        <span class="span-footer3"></span></span>
+                        <span class="span-footer4">
+                    <span class="span-footer5">
+                    Language: </span>
+                    English </span>
+                    <span class="span-footer6"></span></button>
+                    </li>
+                    <li class="li-footer1">
+                    <button type="button" class="button-footer1"><span class="opacity"></span><span class="sidebar-border-style">
+                    <span class="span-footer5">
+                    Location: </span>
+                    Netherlands </span><span class="span-footer6"></span></button>
+                    </li>
+                    <li class="li-footer1">
+                    <button type="button" class="button-footer1"><span class="opacity"></span><span class="sidebar-border-style">
+                    <span class="span-footer5">
+                    Restricted Mode: </span>
+                    Off </span><span class="span-footer6"></span></button>
+                    </li>
+
+                </ul>
+            <a href="https://archive.ph/o/Bss88/https://www.youtube.com/feed/history" class="a-footer2">
+                <span class="span-footer1"></span>
+                <span class="span-footer2">
+                <span class="span-footer8"></span></span>
+                <span class="span-footer4">History</span>
+                <span class="span-footer9"></span></a>
+                <button type="button" class="button-footer2">
+                    <span class="span-footer1"></span>
+                    <span class="span-footer2">
+                        <span class="span-footer10"></span>
+                    </span>
+                    <span class="span-footer4">Help
+                    </span>
+                </button>
+            </div>
+            <div class="second-footer-list">
+                <ul class="ul-footer">
+                    <li class="li-footer">About</li>
+                    <li class="li-footer">Press</li>
+                    <li class="li-footer">Copyright</li>
+                    <li class="li-footer">Creators</li>
+                    <li class="li-footer">Advertise</li>
+                    <li class="li-footer">Developers</li>    
+                </ul>
+            </div>
+            <div class="third-footer-list">
+                <ul class="ul-footer">
+                <li class="li-footer">Terms</li>
+                <li class="li-footer">Privacy</li>
+                <li class="li-footer">Policy & Safety</li>
+                <li class="li-footer">Test</li>
+                <li class="li-footer">new features</li>  
+                </ul>    
+            </div>
+        </footer>
+        </div>
     </body>
 </html>
